@@ -9,6 +9,7 @@
 ## Usage
 - In the terminal instance use the 'node index.js' command. You will then be given prompts to answer. When finished a README-gen.md file will be created in your directory for your use.
 ![alt text](images/readmenode.JPG)
+- Find a video of how it works here: https://www.youtube.com/watch?v=55lhxEm4AEs 
    
 ## Credits
 - We used the require package, https://www.npmjs.com/package/inquirer

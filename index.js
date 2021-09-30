@@ -264,7 +264,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Put any questions here',
+        message: 'Please eneter your gihub username and email here',
         name: 'questions',
     },
     {
