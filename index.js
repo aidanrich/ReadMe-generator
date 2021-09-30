@@ -1,7 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+
+// console.log(generateMarkdown({title: "sour heads candy"}))
+
 
 const mit = `MIT License
 
@@ -25,7 +28,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.`
 
-  const apache = `                              Apache License
+const apache = `                              Apache License
   Version 2.0, January 2004
 http://www.apache.org/licenses/
 
@@ -213,7 +216,7 @@ file or class name and description of purpose be included on the
 same "printed page" as the copyright notice for easier
 identification within third-party archives.
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2021] [name of copyright owner]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -256,53 +259,44 @@ const questions = [
         name: 'collab',
     },
     {
+        type: 'input',
+        message: 'Tests?',
+        name: 'test',
+    },
+    {
+        type: 'input',
+        message: 'Put any questions here',
+        name: 'questions',
+    },
+    {
         type: 'checkbox',
         message: 'Would you like to add any badges?',
         name: 'badges',
         choices: ["![Javascript](https://img.shields.io/badge/js-JavaScript-brightgreen)", "![css](https://img.shields.io/badge/style-css-orange)", "![html](https://img.shields.io/badge/index-html-blue)"]
-    }, 
+    },
     {
         type: 'checkbox',
         message: 'The last section of a high-quality README file is the license.',
         name: 'license',
         choices: ["MIT", "APACHE", "none"]
-    }, 
-    
+    },
+
+
 
 ];
 inquirer
     .prompt(questions)
-    
+
     // // TODO: Create a function to write README file
-// function writeToFile('README-gen.md', data) {}
+    // function writeToFile('README-gen.md', data) {}
     .then((response) => {
-        if(response.license[0]) {
+        if (response.license[0]) {
             response.license = mit
         } else if (response.license[2]) {
             response.license = apache
         } else response.license = noLicense
 
-        fs.writeFile('README-gen.md', `# ${response.name}
-## Description
-- ${response.description}
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-## Installation
-- ${response.install}
-## Usage
-- ${response.instructions}
-## Credits
-- ${response.collab}
-## Badges
-${response.badges}
-## License
-${response.license}
-
-
-        `, (err) =>
+        fs.writeFile('README-gen.md', generateMarkdown(response) , (err) =>
             err ? console.error(err) : console.log('Commit logged!')
 
         )

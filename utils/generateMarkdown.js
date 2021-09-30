@@ -243,7 +243,7 @@ limitations under the License.`
 
 const noLicense = "No License"
 
-if (response.license = "MIT") {
+if (data.license = "MIT") {
   mit
 }
 }
@@ -252,9 +252,32 @@ if (response.license = "MIT") {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
+  return `# ${data.name}
+  ## Description
+  - ${data.description}
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  ## Installation
+  - ${data.install}
+  ## Usage
+  - ${data.instructions}
+  ## Credits
+  - ${data.collab}
+  ## Tests
+  ${data.test}
+  ## Questions
+  ${data.questions}
+  ## Badges
+  ${data.badges}
+  ## License
+  ${data.license}
+  
+  
+  
+          `
 }
 
 module.exports = generateMarkdown;

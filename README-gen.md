@@ -1,21 +1,25 @@
-# Quiz
-## Description
-- This is a quiz game. I asks the hard questions. You'll never win!
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-## Installation
-- Don't even bother, this quiz is way too hard for the likes of you!
-## Usage
-- If you want to look like a total rube go ahead and instal it.
-## Credits
-- I made this all by myself, obv.
-## Badges
-![Javascript](https://img.shields.io/badge/js-JavaScript-brightgreen),![css](https://img.shields.io/badge/style-css-orange),![html](https://img.shields.io/badge/index-html-blue)
-## License
-MIT License
+# hdshksdh
+  ## Description
+  - dfksdkjf
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  ## Installation
+  - sdfsdf
+  ## Usage
+  - sdfsdf
+  ## Credits
+  - sfsd
+  ## Tests
+  dsfs
+  ## Questions
+  sdfsd
+  ## Badges
+  ![Javascript](https://img.shields.io/badge/js-JavaScript-brightgreen)
+  ## License
+  MIT License
 
 Copyright (c) [2021] [Aidan Rich]
   
@@ -36,6 +40,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-        
+  
+  
+  
+          

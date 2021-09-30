@@ -2,7 +2,7 @@
 ## Description
 - We were tasked with creating a node based app that would generate a README.md file by taking user input through a terminal instance.
 - By using this generator you can easily make sure your README covers the most common items included in a good readme.
-- This project helped us learn about Template Lieterals, Node js and the inquirer package. 
+- This project helped us learn about Template Literals, Node js and the inquirer package. 
 ## Installation
 - You will need to use 'npm init' and 'npm i inquirer' in a command line while in the index.js file.
 - This will give you access to the package needed to run this app.
