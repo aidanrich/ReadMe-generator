@@ -1,21 +1,21 @@
-# hdshksdh
+# Ultimate Quiz!
   ## Description
-  - dfksdkjf
+  - I made the ultimate quiz! Tremble in fear of how difficult this quiz is! You'll lose every time!
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
   ## Installation
-  - sdfsdf
+  - I wouldn't even bother, this quiz is so hard. Even trying to install will make you lose your mind!
   ## Usage
-  - sdfsdf
+  - If you want to feel bad about yourself, take this quiz!
   ## Credits
-  - sfsd
+  - I did this all on my own, obv.
   ## Tests
-  dsfs
+  No tests required (this is a quiz)
   ## Questions
-  sdfsd
+  I have no questions
   ## Badges
   ![Javascript](https://img.shields.io/badge/js-JavaScript-brightgreen)
   ## License
@@ -40,7 +40,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-  
-  
   
           

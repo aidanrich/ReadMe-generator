@@ -3,7 +3,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// console.log(generateMarkdown({title: "sour heads candy"}))
 
 
 const mit = `MIT License
@@ -288,7 +287,6 @@ inquirer
     .prompt(questions)
 
     // // TODO: Create a function to write README file
-    // function writeToFile('README-gen.md', data) {}
     .then((response) => {
         if (response.license[0]) {
             response.license = mit
@@ -296,7 +294,7 @@ inquirer
             response.license = apache
         } else response.license = noLicense
 
-        fs.writeFile('README-gen.md', generateMarkdown(response) , (err) =>
+        fs.writeFile('README-gen.md', generateMarkdown(response), (err) =>
             err ? console.error(err) : console.log('Commit logged!')
 
         )
@@ -306,9 +304,4 @@ inquirer
 
 
 
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
 
